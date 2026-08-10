@@ -13,7 +13,6 @@ sripped_message = message.strip()
 print("The string after removing whitespace is:", sripped_message)
 
 
-
 #the programm remove the whitespace from the string using lstrip() method
 
 original_message = "   Hello World   "
