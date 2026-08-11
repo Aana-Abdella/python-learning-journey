@@ -40,3 +40,14 @@ rstripped_message = unstripped_message.rstrip()
 #print the string after removing whitespace from the right side
 
 print("The string after removing whitespace from the right side is:", rstripped_message)
+
+# The programm remove the whitespace from the string using replace() method
+
+
+#the programm that print in new line using \n
+
+message1 = "Hello "
+
+message2 = "world "
+
+print(message1, message2, sep='\n')
