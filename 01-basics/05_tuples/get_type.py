@@ -20,3 +20,10 @@ tuple_types = list(map(type, this_tuple))
 
 print(tuple_types) 
 
+
+# Checking the type of a tuple using the isinstance() function
+
+my_tuple = ("apple", "banana", "cherry")
+
+if isinstance(my_tuple, tuple):
+    print("my_tuple is a tuple")  # Output: my_tuple is a tuple
