@@ -22,3 +22,9 @@
      len()
      type() is used     
 
+
+# 3. Check for a Tuple Using isinstance()
+   --If you are writing conditional logic to check if an object is a tuple,
+   -- it is best practice to use isinstance() instead of type() == tuple because it natively supports subclassing:
+
+   
