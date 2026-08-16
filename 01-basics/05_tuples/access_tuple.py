@@ -29,3 +29,8 @@ print(my_tuple[1:5:2])  # Output: ('banana', 10)
 
 if "apple" in my_tuple:
     print("Yes, 'apple' is in the tuple")  # Output: Yes, 'apple' is in the tuple
+
+    # Checking if an element does not exist in the tuple using the 'not in' keyword
+
+if "grape" not in my_tuple:
+    print("No, 'grape' is not in the tuple")  # Output: No, 'grape' is not in the tuple
