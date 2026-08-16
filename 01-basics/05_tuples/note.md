@@ -52,3 +52,8 @@ You can access tuple items by referring to the index number, inside square brack
 You can access tuple items by referring to the index number, inside square brackets:
   print(my_tuple[-5:-2])  output : ("java". "php", 1, )
     it means start from 2 and 2 is included and upto 5 but 5 is not included
+    
+    
+# Check if Item Exists
+   --To determine if a specified item is present in a tuple use the *in* keyword:
+   -- use *not in* keyword:
