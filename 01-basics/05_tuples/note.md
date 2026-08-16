@@ -39,7 +39,16 @@
 
   for example 
   my tuple = ("python", "java", "php", 1, 12.05, none) 
-
+You can access tuple items by referring to the index number, inside square brackets:
   print(my_tuple[2:5])  output : ("php". 1, 12.05)
 
   it means start from 2 and 2 is included and upto 5 but 5 is not included
+
+# Negative indexing 
+  it also the same with posotive indexing but you have to use small negative number to big negative number
+
+   for example 
+  my tuple = ("python", "java", "php", 1, 12.05, none) 
+You can access tuple items by referring to the index number, inside square brackets:
+  print(my_tuple[-5:-2])  output : ("java". "php", 1, )
+    it means start from 2 and 2 is included and upto 5 but 5 is not included
