@@ -11,3 +11,7 @@ print(my_tuple[-1])  # Output: None
 # Accessing a range of elements using slicing
 
 print(my_tuple[1:4])  # Output: ('banana', 'cherry', 10)
+
+# negative range slicing to access elements from the end of the tuple
+
+print(my_tuple[-4:-1])  # Output: (10, True, 3.14)
