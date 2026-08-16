@@ -57,3 +57,22 @@ You can access tuple items by referring to the index number, inside square brack
 # Check if Item Exists
    --To determine if a specified item is present in a tuple use the *in* keyword:
    -- use *not in* keyword:
+
+# Change Tuple Values
+ -- tuples are unchangable. once you create you cant remove item or add item 
+
+ trick: You have to change to list and add or remove item, and back change to tuple.
+
+
+# Add tuple to a tuple
+ -- to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple:
+ 
+
+
+
+ # Tuple Methods
+
+Python has two built-in methods that you can use on tuples.
+𝗠𝗲𝘁𝗵𝗼𝗱 	𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻
+count()	Returns the number of times a specified value occurs in a tuple
+index()	Searches the tuple for a specified value and returns the position of where it was found
