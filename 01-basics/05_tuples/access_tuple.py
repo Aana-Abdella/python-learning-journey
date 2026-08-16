@@ -15,3 +15,12 @@ print(my_tuple[1:4])  # Output: ('banana', 'cherry', 10)
 # negative range slicing to access elements from the end of the tuple
 
 print(my_tuple[-4:-1])  # Output: (10, True, 3.14)
+
+# Accessing elements using a step value in slicing
+
+print(my_tuple[::2])  # Output: ('apple', 'cherry', True, None)
+
+# Checking if an element exists in the tuple using the 'in' keyword
+
+if "apple" in my_tuple:
+    print("Yes, 'apple' is in the tuple")  # Output: Yes, 'apple' is in the tuple
