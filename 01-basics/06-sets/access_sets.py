@@ -10,3 +10,9 @@ for x in thisset:
 print(type(thisset))
 
 print("banana" in thisset)
+
+
+# Add sets
+my_set = {"Dog","cat","cow"}
+my_set.add("frog")
+print(my_set)
