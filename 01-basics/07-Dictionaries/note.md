@@ -8,7 +8,7 @@ its related value.
 
 ```python
 student = {
-    "name": "Amina",
+    "name": "Aanaa",
     "age": 21,
     "course": "Python",
 }
@@ -18,7 +18,7 @@ In this dictionary:
 
 | Key | Value |
 | --- | --- |
-| `"name"` | `"Amina"` |
+| `"name"` | `"Aanaa"` |
 | `"age"` | `21` |
 | `"course"` | `"Python"` |
 
