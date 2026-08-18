@@ -18,4 +18,5 @@
    update() - to add items from another set into the current set.
    remove() -to remove item and error if item not exist
    discard() - to remove item and not error
-   pop() - remove item and print set show the removed item
+   pop() - remove item and print set show the removed item.
+   del - delete set completely.
