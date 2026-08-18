@@ -14,3 +14,8 @@
    len() - to get the length.
    type() - to get type of data types.
    set() - to make set.
+   add() - to add item in the set
+   update() - to add items from another set into the current set.
+   remove() -to remove item and error if item not exist
+   discard() - to remove item and not error
+   pop() - remove item and print set show the removed item
