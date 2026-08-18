@@ -10,7 +10,12 @@ students = {
 
 print("before anything applied")
 print(students)
-print(len(students))
+print("the lenths of students is:" ,len(students))
+
+print("Adding or modifying items to dictionarries")
+students["skills"] = ['Python','Scripting','javascript','node','AI-Autimation']
+
+# Accessing students using key or indexing anything else.
 
 # Change to list
 
