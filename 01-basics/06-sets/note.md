@@ -20,3 +20,12 @@
    discard() - to remove item and not error
    pop() - remove item and print set show the removed item.
    del - delete set completely.
+
+# Join Set 
+
+# Methods
+   - The *union()* and *update()* joins all items from both sets.
+   - intersection() - returns a set that have items exist in both sets.
+   - difference()  - returs items in first set not in other set.
+   - symmetric_difference() - return the item not intersect.
+ - explained well
