@@ -27,3 +27,5 @@ my_tuple = ("apple", "banana", "cherry")
 
 if isinstance(my_tuple, tuple):
     print("my_tuple is a tuple")  # Output: my_tuple is a tuple
+
+    print(my_tuple[2])  # Output: ('apple', 'banana', 'cherry')

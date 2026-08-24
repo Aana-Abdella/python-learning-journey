@@ -41,4 +41,9 @@ print( 2 in thislist)  # Output: True
 
 for index, value in enumerate(thislist):
     print("The index of item is : ", index, "The value of an item is :", value)
+
+    #or you can use f-strings to format the output
+
     print(f"Index: {index}; value: {value}")
+
+

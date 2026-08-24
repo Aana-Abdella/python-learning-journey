@@ -49,7 +49,7 @@ tuple3 = tuple1 + tuple2
 
 print(tuple3)
 
-# Multiple Tuples
+# Multiple Tuples it duplicate the items of tuples
 
 tuple4 = ("Hararii", "Dire Dawa")
 

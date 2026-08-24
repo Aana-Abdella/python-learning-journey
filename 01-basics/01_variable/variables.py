@@ -51,7 +51,7 @@ print("The modulus of x, y, and z is =", x % y % z)
 
 # Print the exponentiation of x, y, and z.
 
-print("The exponentiation of x, y, and z is =", x ** y ** z)
+# print("The exponentiation of x, y, and z is =", x ** y ** z)
 # Output: 1.0e+601  (extremely large number)
 
 
@@ -98,6 +98,15 @@ print("The modulus of x, y, and z is =", x % y % z)
 
 # Print the exponentiation of x, y, and z.
 
-print("The exponentiation of x, y, and z is =", x ** y ** z)
+# print("The exponentiation of x, y, and z is =", x ** y ** z)
 # Output: extremely large number
-```
+
+
+# Create a variable containing your favorite number.
+
+# Then create a message that reveals your favorite number and print that message.
+
+favorite_number = 7
+
+message = f"My favorite number is {favorite_number}."
+print(message)

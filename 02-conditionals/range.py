@@ -1,2 +1,2 @@
-for i in range(5, 5):
-    print(i, "I love you")
+for i in range(i):
+    print(i, "I  you")
