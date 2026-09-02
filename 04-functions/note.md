@@ -591,7 +591,137 @@ Attempt each question before looking at an implementation. Write the function fi
 4. Design a function-based expense tracker that can add an expense, remove an expense, calculate totals by category, and return a monthly summary without using global mutable state.
 5. Refactor a large program so that pure calculation functions are separated from input and output functions. Explain how data flows between each function.
 
-## 19. Final Syntax Reference
+## 19. Trick Function Questions
+
+These questions are designed to test understanding, not memorization. Predict the result before running each example, then explain why it behaves that way.
+
+### Trick 1: `print` is not `return`
+
+```python
+def add(first_number, second_number):
+    print(first_number + second_number)
+
+
+result = add(2, 3)
+print(result)
+```
+
+What is printed? Why is the second line different from the first line?
+
+### Trick 2: A function stops at `return`
+
+```python
+def check_number(number):
+    if number > 0:
+        return "positive"
+    return "not positive"
+    print("This line runs")
+
+
+print(check_number(4))
+```
+
+Does `This line runs` appear? Explain the control flow.
+
+### Trick 3: Mutable default parameters
+
+```python
+def add_item(item, items=[]):
+    items.append(item)
+    return items
+
+
+print(add_item("book"))
+print(add_item("pen"))
+```
+
+Why does the second call contain the item from the first call? Rewrite the function correctly.
+
+### Trick 4: Local scope
+
+```python
+message = "outside"
+
+
+def change_message():
+    message = "inside"
+    return message
+
+
+print(change_message())
+print(message)
+```
+
+Why are the two printed values different? Which `message` does each `print` use?
+
+### Trick 5: Default arguments are evaluated once
+
+```python
+def power(number, exponent=2):
+    return number ** exponent
+
+
+print(power(3))
+print(power(3, 3))
+```
+
+What are the two results? What value is used when `exponent` is omitted?
+
+### Trick 6: Positional and keyword binding
+
+```python
+def introduce(name, age):
+    return f"{name} is {age}."
+
+
+print(introduce("Aanaa", age=20))
+```
+
+Why is this call valid? Give one example of a call that would cause a `TypeError` because the same parameter receives two values.
+
+### Trick 7: Functions are values
+
+```python
+def greet():
+    return "Hello"
+
+
+first = greet
+second = greet()
+
+print(first)
+print(second)
+```
+
+Which variable stores the function itself, and which stores the returned string? How would you call the function through `first`?
+
+### Trick 8: Aliases and mutation
+
+```python
+def add_number(numbers):
+    numbers.append(4)
+
+
+values = [1, 2, 3]
+alias = values
+add_number(alias)
+print(values)
+```
+
+Why does `values` change even though `add_number` received `alias`? How could the function avoid changing the original list?
+
+### Answer Check
+
+1. Trick 1 prints `5`, then `None`. The function displays `5` but has no `return` statement.
+2. Trick 2 prints `positive`. The `print` after `return` is unreachable.
+3. Trick 3 reuses the same list object. Use `items=None`, then create `items = []` inside the function.
+4. The first output is `inside`; the second is `outside`. The assignment inside the function creates a local variable.
+5. The results are `9` and `27`. The omitted exponent uses the default value `2`.
+6. The positional argument fills `name`, and the keyword argument fills `age`. `introduce("Aanaa", "Sam", age=20)` gives `age` two values.
+7. `first` stores the function; `second` stores `"Hello"`. Call it with `first()`.
+8. Both names refer to the same list. Pass `numbers.copy()` or return a new list such as `numbers + [4]`.
+
+## 20. Final Syntax Reference
 
 ```python
 def function_name(required_parameter, optional_parameter="default"):
