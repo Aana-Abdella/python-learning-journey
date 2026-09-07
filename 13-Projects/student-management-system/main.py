@@ -59,13 +59,13 @@ def view_student():
          
     print("Student Not found")
 
-def calculate_average():
+def calculate_average(student):
     grades = student["courses"].values()
     total = sum(grades)
     number_of_courses = len(grades)
     return total / number_of_courses
 
-def check_pass_fail():
+def check_pass_fail(student):
     average = calculate_average(student)
     if average >= 50 :
         return "PASS"
