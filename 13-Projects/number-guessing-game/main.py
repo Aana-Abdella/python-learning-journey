@@ -32,6 +32,6 @@ while True:
     else:
         print("You got it wrong!")
 
-print("You got it in " + str(number_of_guesses) + " guesses")
+print("You got it in " + str(number_of_guesses) + " guesses") # str
      
 
