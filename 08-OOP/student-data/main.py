@@ -13,7 +13,7 @@ class Student:
         total = 0
         
         for a in self.mark :
-            total += a
+            total += 0
         return total / len(self.mark) 
 
 student1 = Student("Aanaa", 23, 4, [50,60,70 ])
