@@ -1,53 +1,36 @@
 class BankAccount:
-    def __init__(self, account_number, account_holder, balance=0):
+    def __init__(self,account_number, account_owner, balance=0):
         self.account_number = account_number
-        self.account_holder = account_holder
-        self.balance = balance
+        self.account_owner = account_owner
+        self.__balance = balance
 
-    def deposit(self, amount):
+    def deposit(self, amount):        
         if amount > 0:
-            self.balance += amount
-            print(f"Dear {self.account_holder}  {amount} Deposited to your Account and your New balance is {self.balance}.")
-        else:
-            print("Deposit amount must be positive.")
+            self.__balance += amount
+            print(f"Dear {self.account_owner} you deposited {amount}, Your current balance is {self.__balance} .")
+        else: 
+            print("Please Enter valid Number")
 
     def withdraw(self, amount):
-        if 0 < amount <= self.balance:
-            self.balance -= amount
-            print(f"Dear {self.account_holder}, you have Withdrew {amount}. New balance is {self.balance}.")
+        if 0 < amount <= self.__balance :
+            self.__balance -= amount
+            print(f"Dear {self.account_owner} you withdraw {amount}, your current balance is {self.__balance}")
         else:
-            print("Invalid withdrawal amount.")
-    def transfer(self, amount, recipient_account):
-        if 0 < amount <= self.balance:
-            self.balance -= amount
-            recipient_account.deposit(amount)
-            print(f"Dear {self.account_holder}, you have Transferred {amount} to {recipient_account.account_holder}. New balance is {self.balance}.")
-        else:
-            print("Invalid transfer amount.")
+            print("Insufficient balance or Invalid amount")
 
+    def transfer(self, amount, reciept_account):
+        if 0 < amount <= self.__balance :
+            self.__balance -= amount
+            reciept_account.deposit(amount)
+            print(f"Dear {self.account_owner} you have transfered {amount} to {reciept_account.account_owner}")
     def get_balance(self):
-        return self.balance
+        return self.__balance
 
-    def __str__(self):
-        return f"Account Number: {self.account_number}, Account Holder: {self.account_holder}, Balance: {self.balance}"
-
-    
-
-account1 = BankAccount("123456", "Alice", 0)
-account1.deposit(500)
-account1.withdraw(200)
-print(account1)
-
-account2 = BankAccount("789012", "Bob")
-account2.deposit(300)
-account2.withdraw(100)
-print(account2)
-
-account3 = BankAccount("345678", "Charlie", 0)
-account3.deposit(1000)
-account3.withdraw(500)
-print(account3)
-
-account1.transfer(300, account2)
-print(account1)
-print(account2)
+account1 = BankAccount(10111 , "Aanaa", 6000)
+print(account1.get_balance())
+withdraw_amount = 500
+account1.withdraw(withdraw_amount)
+account2 = BankAccount(10112 , "Obsa", 1000)
+account1.transfer(500, account2)
+print(account1.get_balance())
+print(account2.get_balance())
