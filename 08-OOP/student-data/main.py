@@ -11,9 +11,8 @@ class Student:
         return f"{self.name} is studying {subject}."
     def calculate_average(self):
         total = 0
-        
         for a in self.mark :
-            total += 0
+            total += a
         return total / len(self.mark) 
 
 student1 = Student("Aanaa", 23, 4, [50,60,70 ])
