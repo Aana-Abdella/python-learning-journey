@@ -17,7 +17,7 @@ class Student:
         self.python_score = python_score
         self.java_score = java_score
         self.english_score = english_score
-        self.skills = skills
+        self.skills = (skills)
 
     def is_eligible(self):
         return 18 <= self.age <= 25
@@ -44,9 +44,10 @@ class Student:
     def has_skill(self, skill):
         return skill in self.skills
 
-
+Student1 = (1012, 'Aanaa', 22, 'SWE', 90, 89, 78, 99, ("python", "speaking"))
+print(Student1)
 class Mclass:
-        x = 10
+    x = 10
 
 p1 = Mclass()
 print(p1.x)
@@ -54,8 +55,3 @@ print(p1.x)
 p2 = Mclass()
 del p2
 
-get(p2.x)
-
-
-class Person:
-    pass
